@@ -1,0 +1,52 @@
+/* privacy Section */
+.privacy-policy {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Sofia", cursive;
+    line-height: 1.6;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+  }
+  
+  .privacy-policy p, .privacy-policy ul {
+    margin-bottom: 15px;
+  }
+  
+  .privacy-policy ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  /* Logo Styling */
+.logo-image {
+    width: 100px; /* Adjust this width as needed */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 100%; /* Ensures it doesn't exceed its container */
+    display: block; /* Ensures proper layout in the nav bar */
+  }
+  
+  /* Optional: Navbar Styling */
+  .nav-container {
+    display: flex;
+    align-items: center; /* Centers logo and links vertically */
+    justify-content: space-between; /* Spreads logo and links apart */
+    padding: 10px; /* Adds spacing inside the nav */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #f8f8f8;
+    margin-top: 40px;
+  }
+  
