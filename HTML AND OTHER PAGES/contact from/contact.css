@@ -15,17 +15,7 @@ body {
     resize: vertical;
   }
   
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
   
   /* Style the container/contact section */
   .container {
@@ -35,19 +25,14 @@ body {
     margin: auto;
   }
   
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
-    width: 50%;
-    margin-top: 10px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.btn:hover {
+    background-color:green;
 
+}
+
+.btn {
+    background-color: rgb(33, 126, 104);
+}
+
+  
   

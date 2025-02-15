@@ -12,28 +12,30 @@
         <p>Contact us @ 123456789 or provide your details below. We will contact you within an hour after submission of your contact details.</p><br><br>
     
 
-    <form action="contact.php">
+    <form action="contact.php" method="post">
+        
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" class="form-control" name="fname"><br>
 
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" class="form-control" name="lname"><br>
 
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
+        <input type="text" class="form-control" name="email"><br>
 
         <label for="contact number">Contact number:</label><br>
-        <input type="text" id="number" name="number" ><br>
+        <input type="text" class="form-control" name="number" ><br>
 
         <label for="message">Message:</label><br>
-        <input type="text" id="message" name="message"><br><br>
+        <input type="text" class="form-control" name="message"><br><br>
 
         <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id="customCheck" name="terms&conditions">
             <label class="custom-control-label" for="customCheck">I agree privacy terms and conditions.</label><br><br>
           </div>
+        
 
-        <input type="submit" value="Submit">
+        <br><button type="submit" class="btn btn-primary" name="submit">Submit</button>
       </form> 
     </div>
 
