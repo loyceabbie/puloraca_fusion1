@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Contact us</h1>
-    </header>
+        <p>Contact us @ 123456789 or provide your details below. We will contact you within an hour after submission of your contact details.</p><br><br>
+    
 
     <form action="contact.php">
         <label for="fname">First name:</label><br>
@@ -18,7 +20,7 @@
         <input type="text" id="lname" name="lname"><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="text" id="email" name="email"><br>
 
         <label for="contact number">Contact number:</label><br>
         <input type="text" id="number" name="number" ><br>
@@ -33,6 +35,7 @@
 
         <input type="submit" value="Submit">
       </form> 
+    </div>
 
     
 </body>
