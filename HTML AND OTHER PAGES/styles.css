@@ -91,7 +91,7 @@ img {
 .hero {
     position: relative;
     height: 100vh; /* Full viewport height */
-    background: url('Background3.jpg') no-repeat center center/cover;
+    background: url('IMAGES\Background3.jpg') no-repeat center center/cover;
     opacity: 0; /* Start hidden */
     animation: fadeIn 2s ease-in-out forwards; /* Fade-in animation */
     display: flex;
