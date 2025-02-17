@@ -2,7 +2,7 @@
 $con=mysqli_connect('localhost','root'); //checking the connection with the database.
 
 if($con){
-    echo "Connection Successful"
+    echo "Connection Successful";
 }
 
 else {
