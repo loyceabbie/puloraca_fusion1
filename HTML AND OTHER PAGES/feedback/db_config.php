@@ -1,9 +1,9 @@
 <?php
 // db_config.php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'your_username');
-define('DB_PASSWORD', 'your_password');
-define('DB_NAME', 'puloraca_fusion');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'Peasy@123');
+define('DB_NAME', 'puloraca_fdb');
 
 // Create database connection
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
