@@ -29,7 +29,9 @@ $stmt = $conn->prepare("INSERT INTO users (name, email, number, message) VALUES 
 $stmt->bind_param("ssis", $name, $email, $number, $message);
 
 if ($stmt->execute()) {
-    echo "New record added successfully";
+    // Redirect to home page after successful form submission
+    header("Location: index.html");
+    exit();
 } else {
     echo "Error: " . $stmt->error;
 }
