@@ -1,5 +1,5 @@
 <?php
-include 'db_confid.php';
+include 'db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
