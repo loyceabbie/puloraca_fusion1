@@ -1,28 +1,40 @@
+<?php
+session_start();
+$isLoggedIn = isset($_SESSION["user_id"]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puloraca Fusion - Modern Japanese Cuisine</title>
-    <link rel="stylesheet" href="HTML AND OTHER PAGES\styles.css">
+    <link rel="stylesheet" href="HTML AND OTHER PAGES/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <nav class="navbar">
-    <div class="nav-container">
-        <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-            <a href="index.html" class="logo">PULORACA FUSION</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.php" class="logo">PULORACA FUSION</a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
                 <a href="PuloracaMenu.jpg">Menu</a>
                 <a href="ABOUTUS.png">About Us</a>
+                <?php if ($isLoggedIn): ?>
+                    <span>Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+                    <a href="HTML AND OTHER PAGES/login/logout.php" class="logout-button">Logout</a>
+                <?php else: ?>
+                    <a href="HTML AND OTHER PAGES/login/login.html" class="login-button">Login</a>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
+
 
     <section class="hero">
         <div class="hero-content">
@@ -120,14 +132,14 @@
                 </address>
             </div>
             <div class="footer-links">
-                <a href="HTML AND OTHER PAGES\privacy.html">Privacy Policy</a>
-                <a href="HTML AND OTHER PAGES\contact form\contact.html">Contact Us</a>
+                <a href="HTML AND OTHER PAGES/privacy.html">Privacy Policy</a>
+                <a href="HTML AND OTHER PAGES/contact form/contact.html">Contact Us</a>
                 <a href="HTML AND OTHER PAGES/feedback/feedback_form.html">Feedback</a>
                 <a href="HTML AND OTHER PAGES/login/login.html">Login</a>
             </div>
         </div>
     </footer>
-    <script src="HTML AND OTHER PAGES\carousel.js"></script>
-    <script src="HTML AND OTHER PAGES\nav.js"></script>
+    <script src="HTML AND OTHER PAGES/carousel.js"></script>
+    <script src="HTML AND OTHER PAGES/nav.js"></script>
 </body>
 </html>

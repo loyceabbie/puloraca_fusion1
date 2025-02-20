@@ -2,7 +2,7 @@
 include 'db_config.php';
 
 $sql = "SELECT * FROM customer_feedback";
-$result = $conn->query($sql);
+$result = $connection->query($sql);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {

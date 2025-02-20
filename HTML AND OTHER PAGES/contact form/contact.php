@@ -1,14 +1,14 @@
 <?php
-$host = "localhost"; // Replace with your MySQL server hostname
-$username = "root";     // Replace with your MySQL username
-$password = "";     // Replace with your MySQL password
-$dbname = "puloraca_fusion";       // Replace with the name of your MySQL database
+$servername = "localhost"; 
+$username = "amk1004803";     
+$password = "zW2EZ8dp";     
+$dbname = "wp_amk1004803";       
 
 // Create a database connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$connection = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
-if ($conn->connect_error) {
+if ($connection->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
@@ -20,12 +20,12 @@ $number = $_POST['number'];
 $message = $_POST['message'];
 
 //insert into database
-$sql = "INSERT INTO users (name, email, number, message) VALUES ('$name', '$email', '$number', '$message')";
+$sql = "INSERT INTO contact (name, email, number, message) VALUES ('$name', '$email', '$number', '$message')";
 
 // Execute the SQL query using the database connection
 
 // Use prepared statements to prevent SQL injection
-$stmt = $conn->prepare("INSERT INTO users (name, email, number, message) VALUES (?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO contact (name, email, number, message) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssis", $name, $email, $number, $message);
 
 if ($stmt->execute()) {
@@ -38,5 +38,5 @@ if ($stmt->execute()) {
 
 // Close the statement and connection
 $stmt->close();
-$conn->close();
+$connection->close();
 ?>

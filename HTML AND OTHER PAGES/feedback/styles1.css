@@ -21,7 +21,7 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
@@ -68,7 +68,7 @@ button {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease-in-out;
 }
 
 button:hover {
