@@ -20,12 +20,12 @@ $number = $_POST['number'];
 $message = $_POST['message'];
 
 //insert into database
-$sql = "INSERT INTO users (name, email, number, message) VALUES ('$name', '$email', '$number', '$message')";
+$sql = "INSERT INTO contact (name, email, number, message) VALUES ('$name', '$email', '$number', '$message')";
 
 // Execute the SQL query using the database connection
 
 // Use prepared statements to prevent SQL injection
-$stmt = $conn->prepare("INSERT INTO users (name, email, number, message) VALUES (?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO contact (name, email, number, message) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssis", $name, $email, $number, $message);
 
 if ($stmt->execute()) {
