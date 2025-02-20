@@ -23,8 +23,8 @@ $isLoggedIn = isset($_SESSION["user_id"]);
             <a href="index.php" class="logo">PULORACA FUSION</a>
             <div class="nav-links">
                 <a href="index.php">Home</a>
-                <a href="PuloracaMenu.jpg">Menu</a>
-                <a href="ABOUTUS.png">About Us</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/Menu/menu.php">Menu</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/ABOUTUS.png">About Us</a>
                 <?php if ($isLoggedIn): ?>
                     <span>Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
                     <a href="HTML AND OTHER PAGES/login/logout.php" class="logout-button">Logout</a>
@@ -43,7 +43,7 @@ $isLoggedIn = isset($_SESSION["user_id"]);
                 Modern Japanese<br>
                 Fusion
             </h1>
-            <a href="reservation.html" class="cta-button">RESERVE TABLE</a>
+            <a href="puloraca1.github.io/HTML AND OTHER PAGES/reservations/reserve.php" class="cta-button">RESERVE TABLE</a>
         </div>
     </section>
 
@@ -132,10 +132,10 @@ $isLoggedIn = isset($_SESSION["user_id"]);
                 </address>
             </div>
             <div class="footer-links">
-                <a href="HTML AND OTHER PAGES/privacy.html">Privacy Policy</a>
-                <a href="HTML AND OTHER PAGES/contact form/contact.html">Contact Us</a>
-                <a href="HTML AND OTHER PAGES/feedback/feedback_form.html">Feedback</a>
-                <a href="HTML AND OTHER PAGES/login/login.html">Login</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/privacy.html">Privacy Policy</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/contact form/contact.html">Contact Us</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/feedback/feedback_form.html">Feedback</a>
+                <a href="puloraca1.github.io/HTML AND OTHER PAGES/login/login.html">Login</a>
             </div>
         </div>
     </footer>
