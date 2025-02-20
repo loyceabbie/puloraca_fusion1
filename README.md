@@ -9,21 +9,21 @@ Password recovery functionality
 User profile management
 Admin dashboard for staff
 
-2. About Us Page Enhancement
+2. users 
 
-Team member profiles with dynamic content
-Restaurant history timeline
-Awards and achievements section
-Image gallery with CRUD operations
+Users database will store login information, 
+including usernames and passwords.
+![image](https://github.com/user-attachments/assets/37c88162-018a-4698-918e-a193fd53f82f)
+
 
 3. Contact Us Page
 
 Contact form with database storage
 Dynamic location map
 Business hours management
-FAQ section with admin CRUD interface
 
-4. Order System
+
+4. Menu Order System
 
 Online menu with real-time updates
 Shopping cart functionality
